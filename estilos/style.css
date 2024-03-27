@@ -42,3 +42,27 @@ main {
     height: 471px;
     width: 269px;
 }
+
+#redes_sociais {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+} 
+
+#redes_sociais img { /*nao se coloca o ">" pois a tag img não é diretamente filha da section "redes sociais"*/
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    transition-duration: .5s;
+    box-sizing: border-box; /*evitar que quando clique mexa em todos os outros*/
+    
+}
+
+#redes_sociais img:hover {
+    transform: scale(1.05);
+    border: 1px solid white;
+    transform: translate(-10px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
